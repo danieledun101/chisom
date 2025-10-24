@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href=""><link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="logo">
+                <img src="image/OIP-removebg-preview.png" alt="">
+                <span>mysite</span>
+            </div>
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul>
+                <li> <a href="indexx.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="product.html">Service</a></li>
+                <li > <a href="serive.html">Contact</a></li>
+                <li><a href="sign.html">sign-in</a></li>
+            </ul>
+            
+        </nav>
+    </section>
+   <!-- <section class=" banner-wrapper ">
+     <div class="banner">
+         <div class="banner-text">
+             <h1> Welcome</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ad corporis debitis, laboriosam nisi a laudantium temporibus accusamus expedita eius.</p>
+         </div>
+         <div class="banner-img">
+            <img src="image/OIP-removebg-preview.png" alt="">
+         </div>
+     </div>
+   </section> -->
+  
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-description">
+          <h1>New cars</h1>
+          <p>a good car brings comfort</p>
+        </div>
+        
+        <img src="image/OIP-removebg-preview.png" alt=""></div>
+      <div class="swiper-slide">
+        <div class="swiper-description">
+          <h1>Social cars</h1>
+          <p>a good car brings comfort</p>
+        </div>
+        <img src="image/57adecf99f9e8.jpeg" alt=""></div>
+      <div class="swiper-slide">
+        <div class="swiper-description">
+          <h1>Toy cars</h1>
+          <p>a good car brings comfort</p>
+        </div>
+        <img src="image/OIP.webp" alt=""></div>
+      <div class="swiper-slide">
+        <div class="swiper-description">
+          <h1>fairly Used cars</h1>
+          <p>a good car brings comfort</p>
+        </div>
+        <img src="image/d245a29768167.560d9b3180768.jpg" alt=""></div>
+      <div class="swiper-slide">
+        <div class="swiper-description">
+          <h1>Old cars</h1>
+          <p>a good car brings comfort</p>
+        </div>
+        <img src="image/pat.webp" alt=""></div>
+    </div>
+     <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
+    </div>
+  </div>
+  <section class="about">
+    <div class="about-section">
+      <h2>About Us</h2>
+      <div class="about-main">
+        <div class="about-content">
+          <h2>A good car brings you closer to kings</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dignissimos cum a amet iste voluptate minima fuga labore fugit asperiores?</p>
+          
+          <div class="btns">
+            <div class="btn">
+            <a href="">Buy Now</a>
+
+            </div>
+            <div class="btn-secondary">
+              <a href="">Learn More</a>
+            </div>
+          </div>
+          
+
+        </div>
+        <div class="about-img">
+          <img src="image/chevrolet-corvette-zr1-coupe-001-removebg-preview.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="productcontainer">
+  
+
+  <div class="productbody">
+    <div class="image">
+     <img src="image/pat.webp" alt="">
+    </div>
+    <div class="text">
+      the car is very rich 
+      and expensive width
+      very good experience.
+      price:144,000$
+      <button> buy now</button>
+
+    </div>
+  </div>
+<div class="productbody">
+    <div class="image">
+     <img src="image/chevrolet-corvette-zr1-coupe-001-removebg-preview.png" alt="">
+    </div>
+    <div class="text">
+      the car is very rich 
+      and expensive width
+      very good experience.
+      price:20,451$
+      <button> buy now</button>
+
+    </div>
+  </div>
+  
+<div class="productbody">
+    <div class="image">
+     <img src="image/OIP-removebg-preview.png" alt="">
+    </div>
+    <div class="text">
+      the car is very rich 
+      and expensive width
+      very good experience.
+      price:75,000$
+      <button> buy now</button>
+
+    </div>
+  </div>
+
+
+  <div class="productbody">
+    <div class="image">
+     <img src="image/57adecf99f9e8.jpeg" alt="">
+    </div>
+    <div class="text">
+      <h1> fanty car</h1>
+      <p>the car is very rich 
+      and expensive width
+      very good experience.</p>
+      <p>price:100,000$</p>
+      
+      <button> buy now</button>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
